@@ -52,6 +52,7 @@ svg {
 
 .product-name {
   line-height: 100%;
+
 }
 
 .description {
@@ -81,7 +82,7 @@ button {
   font-size: 0.875rem;
   font-weight: 700;
   background: #3D8168;
-  padding: 0.95rem 5.7rem;
+  padding: 0.95rem 5.5rem;
   text-decoration: none;
   cursor: pointer;
 }
@@ -91,8 +92,7 @@ button:hover {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 620px) {
-
+@media only screen and (min-width: 620px){
   main {
     flex-direction: row;
   }
@@ -112,11 +112,15 @@ button:hover {
   }
 
   .product-name {
-    margin: revert;
+    margin: 1.34rem 0;
+  }
+
+  .box-price {
+    margin-top: 1.34rem;
   }
 
   button {
     margin-top: 1.34rem;
-    padding: 0.95rem 3.85rem;
+    padding: 0.95rem 3.65rem;
   }
 }
