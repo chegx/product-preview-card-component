@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-
 body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
@@ -18,21 +16,28 @@ img {
   display: block;
 }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
 h1 {
+  margin: 1rem 0;
   font-family: 'Fraunces', serif;
   font-size: 2rem;
-  margin: 0;
+  font-weight: 700;
+  line-height: 100%;
+  width: 90%;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   color: hsl(228, 12%, 48%);
-}
-
-svg {
-  margin-right: 0.5rem;
-  margin-bottom: -0.25rem;
+  line-height: 170%;
 }
 
 .card {
@@ -45,44 +50,41 @@ svg {
   margin: 1.5rem;
 }
 
-.product-type {
-  font-size: 0.75rem;
-  letter-spacing: 0.3rem;
-}
-
-.product-name {
-  line-height: 100%;
-
-}
-
-.description {
-  line-height: 170%;
-}
-
 .box-price {
+  margin: 1rem 0;
   display: flex;
   align-items: center;
 }
 
 .current-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: hsl(158, 36%, 37%);
 }
 
 .previous-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   margin-left: 1.34rem;
 }
 
 button {
-  margin-top: 0.67rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   border-style: none;
   border-radius: 0.5rem;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 500;
   background: #3D8168;
-  padding: 0.95rem 5.5rem;
+  padding: 0.95rem;
+  width: 100%;
   text-decoration: none;
   cursor: pointer;
 }
@@ -92,14 +94,19 @@ button:hover {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
   main {
     flex-direction: row;
   }
 
-  img {
+img {
     width: 18.75rem;
     border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  h1 {
+    margin: 1.34rem 0;
+    width: 80%;
   }
 
   .card {
@@ -111,16 +118,7 @@ button:hover {
     margin: 2rem;
   }
 
-  .product-name {
-    margin: 1.34rem 0;
-  }
-
   .box-price {
-    margin-top: 1.34rem;
-  }
-
-  button {
-    margin-top: 1.34rem;
-    padding: 0.95rem 3.65rem;
+    margin: 1.34rem 0;
   }
 }
